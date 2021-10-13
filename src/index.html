@@ -1,14 +1,126 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>Validacion </header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Sukha</title>
+</head>
+<body>
+    <main id="main"> 
+      <section id="principal">
+      <div id="principal"  >
+        <h1 id="fondotitulo" > Sukha  </h1>
+        <h2>Aceites Escenciales y Aromaticos </h2>
+        <img src="img/aceite.jpg" alt="">
+        <div id="Ver">
+        <input type="button" value="Ver Más" id="verMas">
+        </div>
+      </div>
+      </section>
+      
+      <section id="productos" style="display:none" >
+      <div id="botones" >
+        <h1 id="catalogo">NUESTROS PRODUCTOS</h1>
+        <h3>Aceites esenciales son 100% puros, naturales y sin ningún aditivo. </h3>
+
+        <img src="img/port.jpg ">
+       <p>Por su pureza y por su amplia variedad de propiedades medicinales,<br> nuestros aceites esenciales son ideales para aromaterapia y cosmética natural.</p>
+        <div id="">
+        <input type="submit" class="botonesingresar"  value="Aceite de Rosa Mosqueta" id="aceitRosas">
+       
+        <input type="button" class="botonesingresar"  value="Aceite de Menta " id="aceiMenta" >
+        
+        <input type="button" class="botonesingresar"  value="Aceite de Canela" id="aceiCanela">
+        </div>
+
+      </div>
+    </section >
+
+
+ <section id= "aceiteRosas" style="display:none" >
+ <div class="container" id="aceiteRosas" >
+  <h3>ACEITE DE ROSA MOSQUETA</h3>
+  <p>El aceite de rosa mosqueta se extrae de las semillas de un arbusto silvestre, familia de las rosas. <br> Es muy valorado por sus propiedades y beneficios para la piel, gracias a su contenido en ácidos grasos <br> esenciales, betacarotenos y vitamina C.</p>
+  <p>Contenido:15ml </p>
+  <h3>Precio: S/ 35.00</h3>
+  <input type="button" class="botonesComprar"  value="Comprar" id="comprarUno">
+  <input type="button" value="Volver" id="volverUno"> 
+
+ </div>
+ </section>
+
+ <section id= "aceiteMenta" style="display:none" >
+  <div class="container" id="aceiteMenta" >
+   <h3>ACEITE DE MENTA </h3>
+   <p>Este aceite estimula y vigoriza el cuerpo y la mente. Tradicionalmente se sabe que ayuda a combatir <br> las náuseas, el mareo y los dolores de cabeza. Estimulante mental, fortalece los nervios y equilibra el <br> cuerpo. Produce una sensación de frío extremo..</p>
+   <p>Contenido:15ml </p>
+   <h3>Precio: S/ 50.00</h3>
+   <input type="button" class="botonesComprar" value="Comprar" id="comprarDos">
+   <input type="button" value="Volver" id="volverDos"> 
+
+ </div>
+ </section>
+
+<section id= "aceiteCanela" style="display:none">
+ <div class="container" id="aceiteCanela" >
+  <h3>ACEITE ESCENCIAL DE CANELA </h3>
+  <p>Conocido por sus propiedades purificantes y por ser un poderoso tónico, este aceite es incondicional, <br> especialmente durante viajes largos. Es antiinflamatorio, muy bueno para los dolores. Alivia las náuseas, es afrodisíaco y energizante.</p>
+  <p>Contenido:15ml </p>
+  <h3>Precio: S/ 45.00</h3>
+  <input type="button" value="Volver" onclick="volverprincipal()"> 
+  <input type="button" class="botonesComprar" onclick="botonComprarC()" value="Comprar">
+ </div>
+ </section>
+
+<section id="formularioDePago" style="display:none">
+ <p>VALIDAR TARJETA</p>
+  <form>
+  <div class= "pagotarjeta">
+    <label for="">Nombre del titular</label>
+    <input type="text"  autocomplete="off" id="owner">
+  </div>
+  <div class="form-group" id="card-number-field">
+     <label for="cardNumber">Numero de tarjeta </label>
+     <input type="text"  maxlength="16" class="form-control" id="userNum">
+      <input type="submit" value="Confirmar" id="submitBtn" />
+  </div>
+  <div class="form-group CVV" id="formulario" display="none">
+    <label for="cvv" ">CVV</label>
+    <input type="text"maxlength="3 class="form-control" id="cvv">
+  </div>
+  <div class="form-group" id="expiration-date">
+      <label>Fecha de Vencimiento</label>
+    <select>
+      <option value="01">Enero</option>
+      <option value="02">Febrero </option>
+      <option value="03">Marzo</option>
+      <option value="04">Abril</option>
+      <option value="05">Mayo</option>
+      <option value="06">Junio</option>
+      <option value="07">Julio</option>
+      <option value="08">Agosto</option>
+      <option value="09">Setiembre</option>
+      <option value="10">Octubre</option>
+      <option value="11">Noviembre</option>
+      <option value="12">Diciembre</option>
+    </select>
+     <select>
+        <option value="16"> 2021</option>
+        <option value="17"> 2022</option>
+        <option value="18"> 2023</option>
+        <option value="19"> 2024</option>
+        <option value="20"> 2025</option>
+        <option value="21"> 2026</option>
+     </select>
+    </div>  
+    </section>  
+  </form>
+ </div>
+ <br />
+
+
+         
+</main>
+</body>
+<script src="index.js" type="module"></script>
 </html>
