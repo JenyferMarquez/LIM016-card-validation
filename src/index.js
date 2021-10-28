@@ -127,20 +127,7 @@ document.getElementById("volverCuatro").addEventListener("click",()=>{
     document.getElementById("aceiteRosas").style.display= "none"
 }   
 )
-/*//boton pagar//
 
-
-document.getElementById("pagar").addEventListener("click",()=>{ 
-    
-    document.getElementById("resultado").style.display= "none" ;
-    document.getElementById("pago").style.display= "block" ;
-    document.getElementById("principal").style.display= "none" ;
-    document.getElementById("productos").style.display= "none" ;
-    document.getElementById("aceiteRosas").style.display= "none" ;
-    document.getElementById("aceiteMenta").style.display= "none ";
-    document.getElementById("aceiteCanela").style.display= "none" ;
-}   
-)*/
 
 /*global userNum*/
 /*eslint no-undef: ["error", { "typeof": true }] */

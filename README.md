@@ -1,46 +1,7 @@
-# Tarjeta de crédito válida
+## Sukha
+## 1. Definicion del producto
 
-## Índice
-
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Pistas, tips y lecturas complementarias](#6-pistas-tips-y-lecturas-complementarias)
-
-***
-
-## 1. Preámbulo
-
-El [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn),
-también llamado algoritmo de módulo 10, es un método de suma de verificación,
-se utiliza para validar números de identificación; tales como el IMEI de los
-celulares, tarjetas de crédito, etc.
-
-Este algoritmo es simple. Obtenemos la reversa del número a verificar (que
-solamente contiene dígitos [0-9]); a todos los números que ocupan una posición
-par se les debe multiplicar por dos, si este número es mayor o igual a 10,
-debemos sumar los dígitos del resultado; el número a verificar será válido si
-la suma de sus dígitos finales es un múltiplo de 10.
-
-![gráfica de algoritmo de Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
-
-## 2. Resumen del proyecto
-
-En este proyecto tendrás que construir una aplicación web que le permita a un
-usuario validar el número de una tarjeta de crédito. Además, tendrás que
-implementar funcionalidad para ocultar todos los dígitos de una tarjeta menos
-los últimos cuatro.
-
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se
-necesitaría validar una tarjeta de crédito y pensar en cómo debe ser esa
-experiencia de uso (qué pantallas, explicaciones, mensajes, colores, ¿marca?)
-etc.
-
-Trabajando en parejas aprenderán a construir una aplicación web que interactuará
-con lx usuarix final a través del navegador, utilizando HTML, CSS y JavaScript
-como tecnologías.
+Se creo esta web para la venta online de aceites esenciales y aromáticos, donde los usuarios puedan realizar sus compras rápidamente desde cualquier lugar donde se encuentren. Describimos los productos a comercializar, sus beneficios y contamos con un formulario de pagos el cual tiene un validador de tarjetas.
 
 ## 3. Objetivos de aprendizaje
 
@@ -48,7 +9,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ### HTML
 
-- [ ] **Uso de HTML semántico**
+- [✓] **Uso de HTML semántico**
 
   <details><summary>Links</summary><p>
 
@@ -58,7 +19,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ### CSS
 
-- [ ] **Uso de selectores de CSS**
+- [✓] **Uso de selectores de CSS**
 
   <details><summary>Links</summary><p>
 
@@ -66,7 +27,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [CSS Selectors - MDN](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors)
 </p></details>
 
-- [ ] **Modelo de caja (box model): borde, margen, padding**
+- [✓] **Modelo de caja (box model): borde, margen, padding**
 
   <details><summary>Links</summary><p>
 
@@ -79,7 +40,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ### Web APIs
 
-- [ ] **Uso de selectores del DOM**
+- [✓] **Uso de selectores del DOM**
 
   <details><summary>Links</summary><p>
 
@@ -88,7 +49,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [Localizando elementos DOM usando selectores - MDN](https://developer.mozilla.org/es/docs/Web/API/Document_object_model/Locating_DOM_elements_using_selectors)
 </p></details>
 
-- [ ] **Manejo de eventos del DOM (listeners, propagación, delegación)**
+- [✓ ] **Manejo de eventos del DOM (listeners, propagación, delegación)**
 
   <details><summary>Links</summary><p>
 
@@ -98,7 +59,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [El objeto Event](https://developer.mozilla.org/es/docs/Web/API/Event)
 </p></details>
 
-- [ ] **Manipulación dinámica del DOM**
+- [] **Manipulación dinámica del DOM**
 
   <details><summary>Links</summary><p>
 
@@ -112,14 +73,14 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ### JavaScript
 
-- [ ] **Tipos de datos primitivos**
+- [✓] **Tipos de datos primitivos**
 
   <details><summary>Links</summary><p>
 
   * [Valores primitivos - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Data_structures#valores_primitivos)
 </p></details>
 
-- [ ] **Strings (cadenas de caracteres)**
+- [✓] **Strings (cadenas de caracteres)**
 
   <details><summary>Links</summary><p>
 
@@ -127,7 +88,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [String — Cadena de caracteres - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String)
 </p></details>
 
-- [ ] **Variables (declaración, asignación, ámbito)**
+- [✓] **Variables (declaración, asignación, ámbito)**
 
   <details><summary>Links</summary><p>
 
@@ -135,7 +96,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [Variables](https://curriculum.laboratoria.la/es/topics/javascript/01-basics/02-variables)
 </p></details>
 
-- [ ] **Uso de condicionales (if-else, switch, operador ternario, lógica booleana)**
+- [✓] **Uso de condicionales (if-else, switch, operador ternario, lógica booleana)**
 
   <details><summary>Links</summary><p>
 
@@ -143,7 +104,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [Tomando decisiones en tu código — condicionales - MDN](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/conditionals)
 </p></details>
 
-- [ ] **Uso de bucles/ciclos (while, for, for..of)**
+- [✓] **Uso de bucles/ciclos (while, for, for..of)**
 
   <details><summary>Links</summary><p>
 
@@ -151,7 +112,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [Bucles e iteración - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Loops_and_iteration)
 </p></details>
 
-- [ ] **Funciones (params, args, return)**
+- [✓] **Funciones (params, args, return)**
 
   <details><summary>Links</summary><p>
 
@@ -182,9 +143,9 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ### Control de Versiones (Git y GitHub)
 
-- [ ] **Git: Instalación y configuración**
+- [✓] **Git: Instalación y configuración**
 
-- [ ] **Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote)**
+- [✓] **Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote)**
 
 - [ ] **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
 
@@ -197,11 +158,11 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ### UX (User eXperience)
 
-- [ ] **Diseñar la aplicación pensando en y entendiendo al usuario**
+- [✓] **Diseñar la aplicación pensando en y entendiendo al usuario**
 
-- [ ] **Crear prototipos para obtener feedback e iterar**
+- [✓] **Crear prototipos para obtener feedback e iterar**
 
-- [ ] **Aplicar los principios de diseño visual (contraste, alineación, jerarquía)**
+- [✓] **Aplicar los principios de diseño visual (contraste, alineación, jerarquía)**
 
 ## 4. Consideraciones generales
 
