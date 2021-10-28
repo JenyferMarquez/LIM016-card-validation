@@ -1,52 +1,44 @@
+// importamos el objeto `validator`, que contiene las funciones `isValid` y `maskify`
+import validator from '../src/validator';
 
+describe('validator', () => {
+  it('debería ser un objeto', () => {
+    expect(typeof validator).toBe('object');
+  });
 
-importar  validador  desde  '../src/validator' ;
+  describe('validator.isValid', () => {
+    it('debería ser una función', () => {
+      expect(typeof validator.isValid).toBe('function');
+    });
 
+    it('debería retornar true para "4083952015263"', () => {
+      expect(validator.isValid('4083952015263')).toBe(true);
+    });
 
-describir ( 'validador' ,  ( )  =>  {
-  it ( 'debería ser un objeto' ,  ( )  =>  {
-    esperar ( typeof  validador ) . toBe ( 'objeto' ) ;
-  } ) ;
+    it('debería retornar true para "79927398713"', () => {
+      expect(validator.isValid('79927398713')).toBe(true);
+    });
 
-  describe ( 'validator.isValid' ,  ( )  =>  {
-    it ( 'debería ser una función' ,  ( )  =>  {
-      esperar ( typeof  validador . isValid ) . toBe ( 'función' ) ;
-    } ) ;
+    it('debería retornar false para "1234567890"', () => {
+      expect(validator.isValid('1234567890')).toBe(false);
+    });
+  });
 
-    it ( 'debería retornar true para "4083952015263"' ,  ( )  =>  {
-      esperar ( validador . isValid ( '4083952015263' ) ) . toBe ( verdadero ) ;
-    } ) ;
+  describe('validator.maskify', () => {
+    it('debería ser una función', () => {
+      expect(typeof validator.maskify).toBe('function');
+    });
 
-    it ( 'debería retornar true para "79927398713"' ,  ( )  =>  {
-      esperar ( validador . isValid ( '79927398713' ) ) . toBe ( verdadero ) ;
-    } ) ;
+    it('Debería retornar "############5616" para "4556364607935616"', () => {
+      expect(validator.maskify('4556364607935616')).toBe('############5616');
+    });
 
-    it ( 'debería retornar false para "1234567890"' ,  ( )  =>  {
-      esperar ( validador . isValid ( '1234567890' ) ) . toBe ( falso ) ;
-    } ) ;
-  } ) ;
+    it('Debería retornar "1" para "1"', () => {
+      expect(validator.maskify('1')).toBe('1');
+    });
 
-  describe ( 'validator.maskify' ,  ( )  =>  {
-    it ( 'debería ser una función' ,  ( )  =>  {
-      esperar ( typeof  validador . maskify ) . toBe ( 'función' ) ;
-    } ) ;
-
-    it ( 'Debería retornar "############ 5616" para "4556364607935616"' ,  ( )  =>  {
-      esperar ( validador . maskify ( '4556364607935616' ) ) . toBe ( '############ 5616' ) ;
-    } ) ;
-
-    it ( 'Debería retornar "1" para "1"' ,  ( )  =>  {
-      esperar ( validador . maskify ( '1' ) ) . toBe ( '1' ) ;
-    } ) ;
-
-    it ( 'Debería retornar "###### orld" para "helloworld"' ,  ( )  =>  {
-      esperar ( validador . maskify ( 'helloworld' ) ) . toBe ( ' ###### orld ' ) ;
-    } ) ;
-  } ) ;
-} ) ;
-© 2021 GitHub, Inc.
-Condiciones
-Intimidad
-Seguridad
-Estado
-Docs
+    it('Debería retornar "######orld" para "helloworld"', () => {
+      expect(validator.maskify('helloworld')).toBe('######orld');
+    });
+  });
+});

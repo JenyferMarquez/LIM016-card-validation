@@ -14,7 +14,7 @@ const validator = { // Objeto, isValid, Maskify es un método
   
   
       let newArray = numeroTarjeta .split("").map(Number).reverse();
-  
+   
   
       //Tomar pares para multiplicarlos
       for (let i = 0; i < newArray.length; i++) {

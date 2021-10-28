@@ -1,8 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Pacifico&display=swap');
+* {
+  
+  box-sizing:border-box;
+}   
+body{
 
-.body{
-    background-color: ivory;
+  font-family: 'Montserrat Alternates', sans-serif;
+  margin:0;
+  background:rgba(248, 184, 7, 0.507);
+
+}
+
+/* estilos base */
+
+img{
+  display:block;
+  width:50%;
+  max-width:100%;
+}
+h1,h2,h3,h4{
+  margin: 0;
+}
+
+.container{
+
+width:100%;
+margin:auto;
+
+}
+.container--flex{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  align-items:center ;
+  padding: 10px;
+
+}
+.column
+{
+width:100;
+}
+/* estilos header*/
+
+.main-header{
+   
+  width:100%
+
+}
+.logo{
+ font-size: 2.8em;
+ color:darkgoldenrod;
+ padding:10px;
+ font-family: 'Pacifico', cursive;
+ font-weight: 100;
+
+}
+.main-header__contactInfor__phone{
+  background:darkgoldenrod;
+  color:white;
+  margin:0 auto;
+  padding:10px;
+
+}
+.main-header__contactInfor__address{
+ padding:10px;
+ margin:0;
+}
+.main-header [class*="fas-"]:before {
+  position: relative;
+  top :2px;
+  right:5px;
+
+}
+.fa-map-marker-alt{
+  color:darkgoldenrod;
+}
+/*estilos del menu*/
+
+.main-nav{
+  width:100%;
+  position:relative;
+  z-index: 2000;
+  padding:10px;
+  
+  }
+
+.fa-bars{
+display: block;
+color: rgba(233, 226, 206, 0.808);
+border-radius: 3px;
+width:40px;
+line-height:42 px;
+text-align: center;
+cursor:pointer;
+font-size:1.5em;
+
+
+}
+
+.social-icon {
+display:flex;
+justify-content: space-between;
+
 }
 
 
-    
+.social-icon--link{
+  text-decoration:none;
+}
+
+
+.mostrar{
+  height:196px;
+}
+
+/* estilo de banner*/
+.banner{
+ margin-top:-60px;
+ position: relative;
+}
+.banner__img{
+
+  width:100%;
+  height: 600px;
+  object-fit: cover;
+}
+.banner__content{
+  width: 90%;
+  color: white;
+  position: absolute;
+  text-align:center ;
+  z-index:1500;
+  top:50%;
+  left:50%;
+  transform: translatex(-50%) translateY(-50%);
+  font-size: 1.9em;
+  font-weight: bold;
   
+}
+
+/*estilos principales*/
+
+.group--color.container{
+  background:darkgoldenrod;
+  color:white;
+  padding: 10 px;
+  text-align: center;
+}
+.main__title{
+   margin:15px;
+   font-size:1.8em;
+   font-family: 'Pacifico', cursive;
+   font-weight: 100 ;
+}
+.column__title{
+font-size:1.3em;
+
+}
+.main__about__description.column:nth-child(2){
+  padding:10px;
+}
+
+/* stylo a los botones */
+.btn--contact{
+display:block;
+text-align:center;
+text-decoration:none;
+width:120px ;
+background:darkgoldenrod;
+color:white;
+padding:10px;
+margin:20px auto;
+
+}
+.botonesComprar{
+  display:block;
+  text-align:center;
+  text-decoration:none;
+  width:120px ;
+  background:darkgoldenrod;
+  color:white;
+  padding:10px;
+  margin:20px auto;
+
+}       
+.volver{
+  display:block;
+  text-align:center;
+  text-decoration:none;
+  width:120px ;
+  background:darkgoldenrod;
+  color:white;
+  padding:10px;
+  margin:20px auto;
+
+}
+
+.botonesingresar{
+  display:block;
+  text-align:center;
+  text-decoration:none;
+  width:120 ;
+  background:darkgoldenrod;
+  color:white;
+  padding:10px;
+  margin:10px auto;
+  justify-content: space-between;
+  cursor: pointer;
+
+}
+
+
+.inner{
+  display: inline-block;
+}
+
+
+
+
+
+.footer{
+  background: #222;
+  color:white;
+  padding:10px;
+  padding-top:  20px;
+  padding-bottom: 20px;
+  font-size: .8em;
+  }
+.footer[class*="fab"]:before{
+  position:relative;
+  top:3px;
+  right:5px;
+  color:white;
+
+}
+
+.container--flex{
+
+  display: flex;
+}
+
+.column{
+  width: 33%;
+  justify-content: center;
+  padding:0, 20px ;
+}
+.nuestrosProductos{
+  width: 600px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  
+}
+
+#mensajeValidacion{
+  color: red;
+
+}
+
+#textoResultado{
+  color:rgb(28, 190, 28);
+}
+
+.form-register {
+  width: 95%;
+  max-width: 400px;
+  margin:auto;
+  background: cornsilk;
+  border-radius: 7px; 
+  padding: 20px;
+}
+
+.form__titulo{
+  padding: 20px;
+  text-align: center;
+  font-weight: 100;
+  font-size: 30px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+
+}
+
+*{
+
+margin:0;
+padding:0;
+box-sizing: border-box;
+
+}
+.contenedorInputs {
+
+  width:400px;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+
+}
+
+input{
+margin-bottom: 15px;
+padding: auto;
+font-size: 16px;
+border-radius: 3px;
+border: 1px solid darkgray ;
+
+}
+
+.input-48{
+ width: 100% ;
+
+}
+.input{
+ width: 100%;
+
+}
+
+
+.aceiteProducto{
+  width: 100%;
+  max-width: 1000px;
+  margin:auto;
+  margin: top 100px;
+  padding:60px ;
+  border-top: 6px solid rgba(230, 141, 9, 0.877)
+
+;
+
+}
+
+
+.aceite{
+  width: 600px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+ }
+
+
+ .title{
+ font-size:30px;
+ margin-bottom: 60px;
+
+
+ }
+
+ .productos{
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: top 100px;
+  padding:10px ;
+  text-align: center;
+  
+ }
+
+ .nuestroProductos{
+  width: 800px;
+  margin-right: auto;
+  margin-bottom: auto;
+  
+
+  
+ }

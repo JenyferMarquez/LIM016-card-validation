@@ -2,93 +2,190 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  
+<!--Portada -->
   <title>Sukha</title>
 </head>
 <body>
-    <main id="main"> 
-      <section id="principal">
-      <div id="principal"  >
-        <h1 id="fondotitulo" > Sukha  </h1>
-        <h2>Aceites Escenciales y Aromaticos </h2>
-        <img src="img/aceite.jpg" alt="">
-        <div id="Ver">
-        <input type="button" value="Ver Más" id="verMas">
-        </div>
+   <header class="main-header">
+     <div class="container container--flex">
+      <div class="logo-container column column--50">
+        <h1 class="logo">Sukha</h1>
       </div>
-      </section>
-      
+        <div class="main-header__contactInfor column column--50">
+          <p class="main-header__contactInfor__phone">
+            <span class="fas fa-phone"> 999-999-999</span>
+          </p>  
+          <p class="main-header__contactInfor__address">
+          <span class="fas fa-map-marker-alt"> Urb La Mar 309 Lima, Peru
+          </span>
+          </p>
+     </div>
+    </div>
+  </header>
+
+
+  <nav class="main-nav">
+     <div class="container container--flex">
+      <div class="social-icon">
+        <a href="" class="social-icon__link"><span class="fab fa-facebook-square"></span></a>
+         <a href="" class="social-icon__link"><span class="fas fa-envelope"></span></a>
+         <a href="" class="social-icon__link"><span class="fab fa-twitter-square"></span></a>
+      </div>  
+     </div>
+  </nav>
+
+   <section class="banner" id="principal">
+      <img src="img/aceite.jpg" class="banner__img" alt="">
+      <div class="banner__content">Aceites Aromáticos y Escenciales
+      <input type="button" value="Ver Más" id="verMas" class="btn btn--contact">
+      </div>
+   </section >
+    <main class= "main"> 
+    </main>
+      <!-- Seccion nuestros productos -->
       <section id="productos" style="display:none" >
-      <div id="botones" >
+      <div id="botones" class="container--flex" >
+        <div class="productos">
         <h1 id="catalogo">NUESTROS PRODUCTOS</h1>
         <h3>Aceites esenciales son 100% puros, naturales y sin ningún aditivo. </h3>
-
-        <img src="img/port.jpg ">
+        <img src="img/port.jpg " class="nuestroProductos">
        <p>Por su pureza y por su amplia variedad de propiedades medicinales,<br> nuestros aceites esenciales son ideales para aromaterapia y cosmética natural.</p>
-        <div id="">
-        <input type="submit" class="botonesingresar"  value="Aceite de Rosa Mosqueta" id="aceitRosas">
+
+       <!-- botones para ver cada producto -->
+        <div id="outer">
+          <div class="inner"><input type="submit" class="botonesingresar"  value="Aceite de Rosa Mosqueta" id="aceitRosas"></div>
        
-        <input type="button" class="botonesingresar"  value="Aceite de Menta " id="aceiMenta" >
+          <div class="inner"><input type="button" class="botonesingresar"  value="Aceite de Menta " id="aceiMenta" ></div>
         
-        <input type="button" class="botonesingresar"  value="Aceite de Canela" id="aceiCanela">
-        </div>
-
+          <div class="inner"> <input type="button" class="botonesingresar"  value="Aceite de Canela" id="aceiCanela"></div>
+       </div>
       </div>
-    </section >
+    </div>
+      </section>
+    
+  <!-- descripcion de cada producto -->
+      <section id= "aceiteRosas" style="display:none" >
+      <div  class="aceiteProducto">
+        <h3 class="title">ACEITE DE ROSA MOSQUETA</h3>
+        <img src="img/rosas.jpg " class="aceite">
+        <p>El aceite de rosa mosqueta se extrae de las semillas de un arbusto silvestre, familia de las rosas. <br> Es muy valorado por sus propiedades y beneficios para la piel, gracias a su contenido en ácidos grasos <br> esenciales, betacarotenos y vitamina C.</p><br>
+        <p>Contenido: 15ml </p>
+        <h3>Precio: S/ 35.00</h3>
+  <!-- botones para comprar y volver -->
+        <input type="button" class="botonesComprar"  value="Comprar" id="comprarUno">
+        <input type="button" value="Volver" id="volverUno" class="volver">
+      </div>
+      </section>
+      <section id= "aceiteMenta" style="display:none" >
+      <div class="aceiteProducto">
+        <h3 class="title">ACEITE DE MENTA </h3>
+        <img src="img/ment.jpg " class="aceite">
+        <p>Este aceite estimula y vigoriza el cuerpo y la mente. Tradicionalmente se sabe que ayuda a combatir <br> las náuseas, el mareo y los dolores de cabeza. Estimulante mental, fortalece los nervios y equilibra el <br> cuerpo. Produce una sensación de frío extremo..</p><br>
+        <p>Contenido: 15ml </p>
+        <h3>Precio: S/ 50.00</h3>
+        <input type="button" class="botonesComprar" value="Comprar" id="comprarDos" >
+        <input type="button" value="Volver" id="volverDos" class="volver">
+      </div>
+      </section>
 
+      <section id= "aceiteCanela" style="display:none">
+      <div class="aceiteProducto">
+        <h3 class="title">ACEITE ESCENCIAL DE CANELA </h3>
+         <img src="img/canela.jpg " class="aceite">
+        <p>Conocido por sus propiedades purificantes y por ser un poderoso tónico, este aceite es incondicional, <br> especialmente durante viajes largos. Es antiinflamatorio, muy bueno para los dolores. Alivia las náuseas, es afrodisíaco y energizante.</p><br>
+        <p>Contenido: 15ml </p>
+        <h3>Precio: S/ 45.00</h3>
+        <input type="button" class="botonesComprar" value="Comprar" id="comprarTres" >
+        <input type="button" value="Volver" id="volverTres" class="volver" > 
+      </div>
+     </section>
+<!-- formulario de tarjeta -->
+<!-- prueba  -->
+  <form action="" id="formularioDePago" style="display:none" class="form-register">
+  
+    <h2 class= "form__titulo">Formato de Compra</h2>
+   <input type="text"  autocomplete="off" id="nombres" placeholder="Nombre" class="input" required>
+   <input type="text"  autocomplete="off" id="apellidos" placeholder="Apellidos" class="input" required>
+   <input type="email"  autocomplete="off" id="email" placeholder="Email" class="input" required>
+   <input type="teléfono"  autocomplete="off" id="teléfono" placeholder="Telefono" class="input" maxlength="9" required><br>
+   <label>Selecciona tu producto</label><br>
+   <label>Cantidad</label>
+   <select>
+    <option >00</option>
+    <option >01</option>
+    <option >02</option>
+    <option >03</option> 
+    <option >04</option> 
+    <option >05</option> 
+    <option >06</option> 
+    <option >07</option>
+    <option >08</option>
+    <option >09</option>
+    <option >10</option>
+    <option >11</option>
+    <option >12</option>
+    </select>
+   <input type="checkbox" name="aceiteRosa"> Aceite Rosa Mosqueta<br>
 
- <section id= "aceiteRosas" style="display:none" >
- <div class="container" id="aceiteRosas" >
-  <h3>ACEITE DE ROSA MOSQUETA</h3>
-  <p>El aceite de rosa mosqueta se extrae de las semillas de un arbusto silvestre, familia de las rosas. <br> Es muy valorado por sus propiedades y beneficios para la piel, gracias a su contenido en ácidos grasos <br> esenciales, betacarotenos y vitamina C.</p>
-  <p>Contenido:15ml </p>
-  <h3>Precio: S/ 35.00</h3>
-  <input type="button" class="botonesComprar"  value="Comprar" id="comprarUno">
-  <input type="button" value="Volver" id="volverUno"> 
-
+  <div>
+  <label>Cantidad</label>
+  <select>
+  <option >00</option>
+  <option >01</option>
+  <option >02</option>
+  <option >03</option> 
+  <option >04</option> 
+  <option >05</option> 
+  <option >06</option> 
+  <option >07</option>
+  <option >08</option>
+  <option >09</option>
+  <option >10</option>
+  <option >11</option>
+  <option >12</option>
+  </select>
+  <input type="checkbox" name="deportes"> Aceite De Menta <br>
  </div>
- </section>
+ <div>
+<label>Cantidad</label>
+<select>
+  <option >00</option>
+  <option >01</option>
+  <option >02</option>
+  <option >03</option> 
+  <option >04</option> 
+  <option >05</option> 
+  <option >06</option> 
+  <option >07</option>
+  <option >08</option>
+  <option >09</option>
+  <option >10</option>
+  <option >11</option>
+  <option >12</option>
+</select>
+<input type="checkbox" name="aceiteCanela">Aceite De Canela<br>
+  <!-- <input type="submit" value="pagar" id="pagar"> -->
+</div>
 
- <section id= "aceiteMenta" style="display:none" >
-  <div class="container" id="aceiteMenta" >
-   <h3>ACEITE DE MENTA </h3>
-   <p>Este aceite estimula y vigoriza el cuerpo y la mente. Tradicionalmente se sabe que ayuda a combatir <br> las náuseas, el mareo y los dolores de cabeza. Estimulante mental, fortalece los nervios y equilibra el <br> cuerpo. Produce una sensación de frío extremo..</p>
-   <p>Contenido:15ml </p>
-   <h3>Precio: S/ 50.00</h3>
-   <input type="button" class="botonesComprar" value="Comprar" id="comprarDos">
-   <input type="button" value="Volver" id="volverDos"> 
 
- </div>
- </section>
-
-<section id= "aceiteCanela" style="display:none">
- <div class="container" id="aceiteCanela" >
-  <h3>ACEITE ESCENCIAL DE CANELA </h3>
-  <p>Conocido por sus propiedades purificantes y por ser un poderoso tónico, este aceite es incondicional, <br> especialmente durante viajes largos. Es antiinflamatorio, muy bueno para los dolores. Alivia las náuseas, es afrodisíaco y energizante.</p>
-  <p>Contenido:15ml </p>
-  <h3>Precio: S/ 45.00</h3>
-  <input type="button" value="Volver" onclick="volverprincipal()"> 
-  <input type="button" class="botonesComprar" onclick="botonComprarC()" value="Comprar">
- </div>
- </section>
-
-<section id="formularioDePago" style="display:none">
- <p>VALIDAR TARJETA</p>
-  <form>
-  <div class= "pagotarjeta">
-    <label for="">Nombre del titular</label>
-    <input type="text"  autocomplete="off" id="owner">
+<div class="datosPago" id="pago" >
+  <div class= "pagotarjeta" >
+  <p>VALIDAR TARJETA</p><br>
+  <div id="resultado" style="display:none;">
+    <p id="textoResultado"></p>
+   </div>
+   <div class= "formulario" id="dato" >
+    <p id="mensajeValidacion"></p>
   </div>
-  <div class="form-group" id="card-number-field">
-     <label for="cardNumber">Numero de tarjeta </label>
-     <input type="text"  maxlength="16" class="form-control" id="userNum">
-      <input type="submit" value="Confirmar" id="submitBtn" />
-  </div>
-  <div class="form-group CVV" id="formulario" display="none">
-    <label for="cvv" ">CVV</label>
-    <input type="text"maxlength="3 class="form-control" id="cvv">
-  </div>
-  <div class="form-group" id="expiration-date">
+  <input type="text"  autocomplete="off" id="owner" placeholder="Nombre del titular" required class="input" ><br>
+  <input type="text"  maxlength="16" id="userNum" placeholder="Número de Tarjeta" class="input" ><br>    
+  <input type="text" maxlength="3"   placeholder="CVV"  id="cvv" class="input" ><br>
+  <div  id="expiration-date" class="input" >
       <label>Fecha de Vencimiento</label>
     <select>
       <option value="01">Enero</option>
@@ -112,15 +209,31 @@
         <option value="20"> 2025</option>
         <option value="21"> 2026</option>
      </select>
+     <input type="submit" value="Enviar" id="submitBtn" class="volver"><br>
+     <input type="submit" value="Volver" id="volverCuatro" class="volver" >
     </div>  
-    </section>  
-  </form>
- </div>
- <br />
-
-
-         
-</main>
+  </div>
+</div>
+ </form>
+<footer class="footer">
+  <div class="container--flex">
+   <div class="column--33">
+    <h2 class="column__title">¿Por qué visitarnos?</h2>
+    <p class="column__txt">Te ofrecemos una agradable alternativa para generar<br> bienestar y comodidad en tu entorno con productos<br> 100% naturales</p>
+   </div>
+  <div class="column--33">
+    <h2 class="column__title">Contáctanos</h2>
+    <p class="column__txt">Urb.La Mar 309 Lima- Perú</p>
+    <p class="column__txt">Teléfono: 999-999-999</p>
+    <p class="column__txt">consultas@sukha.com</p>
+   </div>
+   <div class="column--33">
+    <h2 class="column__title">Siguenos en nuestras redes</h2>
+    <p class="column__txt"><a href="" class="fab fa-facebook-square"></a>  Facebook</p>
+    <p class="column__txt"><a href="" class="fab fa-twitter-square"></a> Twitter</p>
+   </div>  
+   </div>
+</footer>
 </body>
 <script src="index.js" type="module"></script>
 </html>
