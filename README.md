@@ -6,6 +6,8 @@ Se creo esta web para la venta online de aceites esenciales y aromáticos, donde
 
 [![Captura-web-2-11-2021-18321-127-0-0-1.jpg](https://i.postimg.cc/Gh3ZFfsJ/Captura-web-2-11-2021-18321-127-0-0-1.jpg)](https://postimg.cc/PNc3h2yP)
 
+[![segunda-vista.jpg](https://i.postimg.cc/ZYs1LcPG/segunda-vista.jpg)](https://postimg.cc/0rmWk7Bn)
+
 ## 3. Objetivos de aprendizaje
 
 Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en tu proyecto. Piensa en eso al decidir tu estrategia de trabajo.
