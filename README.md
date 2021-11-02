@@ -6,7 +6,7 @@ Se creo esta web para la venta online de aceites esenciales y aromáticos, donde
 
 [![Captura-web-2-11-2021-18321-127-0-0-1.jpg](https://i.postimg.cc/Gh3ZFfsJ/Captura-web-2-11-2021-18321-127-0-0-1.jpg)](https://postimg.cc/PNc3h2yP)
 
-[![segunda-vista.jpg](https://i.postimg.cc/ZYs1LcPG/segunda-vista.jpg)](https://postimg.cc/0rmWk7Bn)[![tercera-vista.jpg](https://i.postimg.cc/c1KN22Jx/tercera-vista.jpg)](https://postimg.cc/vDdj6P9k)
+[![segunda-vista.jpg](https://i.postimg.cc/ZYs1LcPG/segunda-vista.jpg)](https://postimg.cc/0rmWk7Bn)[![tercera-vista.jpg](https://i.postimg.cc/c1KN22Jx/tercera-vista.jpg)](https://postimg.cc/vDdj6P9k)[![Formulario-validador.jpg](https://i.postimg.cc/0jCGcZFL/Formulario-validador.jpg)](https://postimg.cc/tnYVgdX5)
 
 ## 3. Objetivos de aprendizaje
 
