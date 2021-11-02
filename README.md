@@ -1,7 +1,10 @@
 ## Sukha
 ## 1. Definicion del producto
 
-Se creo esta web para la venta online de aceites esenciales y aromáticos, donde los usuarios puedan realizar sus compras rápidamente desde cualquier lugar donde se encuentren. Describimos los productos a comercializar, sus beneficios y contamos con un formulario de pagos el cual tiene un validador de tarjetas[![Sukha.jpg](https://i.postimg.cc/NM90jMQF/Sukha.jpg)](https://postimg.cc/47GG8X7R)
+Se creo esta web para la venta online de aceites esenciales y aromáticos, donde los usuarios puedan realizar sus compras rápidamente desde cualquier lugar donde se encuentren. Describimos los productos a comercializar, sus beneficios y contamos con un formulario de pagos el cual tiene un validador de tarjetas.
+
+
+[![Captura-web-2-11-2021-18321-127-0-0-1.jpg](https://i.postimg.cc/Gh3ZFfsJ/Captura-web-2-11-2021-18321-127-0-0-1.jpg)](https://postimg.cc/PNc3h2yP)
 
 ## 3. Objetivos de aprendizaje
 
